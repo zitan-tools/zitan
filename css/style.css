@@ -61,6 +61,12 @@ h1, h2, .brand, .category-label, .category-title, .tool-label {
   flex-direction: column;
   gap: 8px;
   border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: opacity 0.15s ease;
+}
+.brand:hover, .brand:focus-visible {
+  opacity: 0.7;
 }
 
 .brand-mark {

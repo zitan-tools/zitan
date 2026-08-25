@@ -28,3 +28,16 @@ document.getElementById("tool-back").addEventListener("click", () => {
   toolDetail.classList.add("hidden");
   document.querySelector(".category-btn.active").click();
 });
+
+const brandHome = document.getElementById("brand-home");
+function goToHome() {
+  document.querySelector(".category-btn[data-category]").click();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+brandHome.addEventListener("click", goToHome);
+brandHome.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    goToHome();
+  }
+});
