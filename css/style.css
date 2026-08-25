@@ -116,6 +116,7 @@ h1, h2, .brand, .category-label, .category-title, .tool-label {
 }
 
 .category-icon { width: 19px; height: 19px; flex-shrink: 0; opacity: 0.75; }
+.x-badge-icon { opacity: 1; }
 
 .category-btn:hover:not(:disabled) { background: var(--moss-pale); }
 
